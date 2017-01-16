@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" root="main">
+
+    <rule id="main" scope="public">
+
+        <item repeat="1-16">
+            <ruleref uri="#alphadigit">
+                <tag>out.concept = out.concept + rules.digit;</tag>
+            </ruleref>
+        </item>
+    </rule>
+
+    <rule id="alphadigit">
+        <one-of>
+            <item>b g l eleven</item>
+            <item>m l c p</item>
+        </one-of>
+    </rule>
+</grammar>
