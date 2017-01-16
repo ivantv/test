@@ -4,13 +4,13 @@
     <rule id="main" scope="public">
 
         <item repeat="1-16">
-            <ruleref uri="#digit">
+            <ruleref uri="#alphadigit">
                 <tag>out.concept = out.concept + rules.digit;</tag>
             </ruleref>
         </item>
     </rule>
 
-    <rule id="digit">
+    <rule id="alphadigit">
         <one-of>
             <item>0</item>
             <item>1</item>
@@ -22,6 +22,10 @@
             <item>7</item>
             <item>8</item>
             <item>9</item>
+            <item>K</item>
+            <item>A</item>
+            <item>M</item>
+            <item>F</item>
         </one-of>
     </rule>
 </grammar> 
